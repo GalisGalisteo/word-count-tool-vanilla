@@ -20,7 +20,11 @@ input {
 
 }
 
-
+.buttons {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 #btn {
     width: 350px;
     height: 80px;
