@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,16 +8,14 @@
     <link rel="stylesheet" href="style.css">
     <title>Word Length Calcuator</title>
 </head>
+
 <body>
-    <h1>Type a word in the box</h1>
-    <input type="text" id="str">
-    <div id="output"></div>
-    <div class="buttons">
-        <button id="btn"><h2>Word length<span id="btn--word-length"></span></h2></button>
-        <button id="btn-add-word"><h2>Add word</h2></button>
+    <div id="app">
+        <h1>Type a word in the box</h1>
+        <input v-model="inputUser" type="text" id="str">
+        <div id="output">El número de letras es: </div>
     </div>
-    <h2>Previous added words</h2>
-    <div id="added-words"></div>
-    <script src="app.js"></script>
+    <script type="module" src="app.js"></script>
 </body>
+
 </html>
